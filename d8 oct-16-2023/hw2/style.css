@@ -1,0 +1,23 @@
+.main{
+    font-size: 80px;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: red;
+    text-shadow: 14px 14px 22px black;
+    border: 20px solid rgb(136, 20, 0);
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black inset, 10px 10px 20px black;
+    text-align: center;
+    letter-spacing: 4px;
+    font-variant: small-caps;
+    -webkit-text-stroke: 4px rgb(36, 49, 61);
+    outline: 8px dashed rgb(136, 20, 0);
+    margin: auto;
+    width: max-content;
+    margin-top: 100px;
+
+}
+h2{
+    margin: 50px;
+}

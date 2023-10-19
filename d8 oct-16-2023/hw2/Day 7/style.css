@@ -1,0 +1,31 @@
+.jfp{
+    font-size: 100px;
+    letter-spacing: 5px;
+    font-variant: small-caps;
+    font-family: Arial;
+    font-style: italic;
+    padding: 20px;
+    width: max-content;
+    margin: auto;
+    border: 10px solid green;
+    outline: 10px dashed red;
+    border-radius: 10px;
+    margin-top: 60px;
+    box-shadow: 0 0 18px black, 0 0 18px black inset;
+    background-color: black;
+}
+
+.j{
+    display: inline;
+    color: red;
+    -webkit-text-stroke: 3px white;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px green;
+}
+.fp{
+    display: inline;
+    color: white;
+    -webkit-text-stroke: 3px green;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px red;
+}

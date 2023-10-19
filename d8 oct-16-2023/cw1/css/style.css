@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.picnic {
+    width: 300px;
+    height: 200px;
+    background: #0866FF;
+    /* grid center */
+    display: grid;
+    place-items: center;
+    font-size: 36px;
+    color: #00AC47;
+}

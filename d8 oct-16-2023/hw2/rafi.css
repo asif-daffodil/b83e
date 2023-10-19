@@ -1,0 +1,23 @@
+div{
+    font-size: 100px;
+    letter-spacing: 10px;
+    font-variant: unset;
+    font-family: Verdana;
+    -webkit-text-stroke: 5px greenyellow;
+    color: red;
+    font-weight: bolder;
+    text-shadow: 10px 10px 10px yellow;
+    font-style: oblique;
+    padding: 20px;
+    width: max-content;
+    margin: auto;
+    border: 6px solid whitesmoke;
+    outline: 6px dashed whitesmoke;
+    border-radius: 6px;
+    margin-top: 60px;
+    box-shadow: 0 0 18px white, 0 0 18px white inset;
+    background-color: olive;
+}
+body{
+    background-color: black;
+}

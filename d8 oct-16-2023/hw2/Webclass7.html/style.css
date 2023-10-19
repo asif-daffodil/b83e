@@ -1,0 +1,36 @@
+.name{
+    font-size: 60px;
+    letter-spacing: 6px;
+    font-variant: small-caps;
+    text-align: center;
+    font-family: 'Times New Roman';
+    /* -webkit-text-stroke: 2px rgb(250, 13, 13);
+    color: rgb(9, 247, 247);
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px black; */
+    font-style: italic;
+    padding: 20px;
+    width: max-content;
+    margin: auto;
+    border: 10px solid rgb(5, 247, 97);    
+    outline: 10px dotted rgb(7, 231, 247);
+    outline-style: 5px groove;
+    border-radius: 10px;
+    margin-top: 60px;
+    box-shadow: 5px 5px 18px rgb(0, 0, 0);
+    background-color: whitesmoke;
+}
+.ma{
+    display: inline;
+    -webkit-text-stroke: 2px rgb(76, 0, 255);
+    color: rgb(209, 0, 146);
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px black;
+}
+.m{
+    display: inline;
+    -webkit-text-stroke: 2px rgb(250, 13, 13);
+    color: rgb(9, 247, 247);
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px black;
+}

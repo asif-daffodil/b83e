@@ -1,0 +1,93 @@
+.BD{
+    font-size: 66px;
+    font-style: italic;
+    letter-spacing: 6px;
+    font-variant: small-caps;
+    color: aliceblue;
+    -webkit-text-stroke:3px green;
+    font-weight: bolder;
+    text-shadow: 4px 4px 4px  red;
+    padding: 21px;
+    width: max-content;
+    margin: auto;
+    border: 6px solid green;
+    outline: 6px dotted red ;
+    margin-top: 60px;
+    background-color:silver;
+    
+}
+.BD:hover{ box-shadow:10px 8px 7px 8px  green ;}
+
+.marque{
+color: red; 
+background-color:green ;
+}
+
+.ima{ margin-top: 100px;
+margin-left: 42px;
+}
+
+.ima2{
+margin-left: 510px;
+margin-top: -382px;
+}
+.ima3{
+    margin-left:970px;
+    margin-top: -382px;
+}
+
+.title1{
+    margin-left: 140px;}
+
+.title2{
+    margin-left: 562px;
+    margin-top: -47px;}
+
+    .title3{
+        margin-left: 1015px;
+        margin-top:-45px ;
+    }
+    .ar1{ 
+      padding: auto;
+      font-size: 20px;  
+      border: 3px solid white;
+      word-spacing: 6px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      width: 300px;
+      margin-left: 90px;
+      background-color: aliceblue;
+    }
+    .ar2{
+        padding: auto;
+      font-size: 20px;  
+      border: 3px solid white;
+      word-spacing: 6px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      width: 300px;
+      margin-left: 557px;
+      margin-top:-270px ;
+      background-color: aliceblue;
+    }
+    .ar3{
+        padding: auto;
+        font-size: 20px;  
+        border: 3px solid white;
+        word-spacing: 6px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 300px;
+        margin-left: 1050px;
+        margin-top:-230px ;
+        background-color: aliceblue;
+         
+    }
+
+    .loc{ margin-top:100px;
+        margin-left: 10px;
+    }
+    .link{margin-left: 10px;}
+
+    .link3{ margin-left: 780px;
+        margin-top: -508px ;
+    }
+    .link2{margin-left:35px;
+    }

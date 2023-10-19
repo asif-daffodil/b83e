@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.kaku{
+    text-decoration: underline;
+}
+
+/* this is a comment */
+
+.text {
+    width: 300px;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: -2px -2px 3px red;
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: black; */
+    border: 2px solid black;
+    /* margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; */
+    /* margin: 30px 40px 50px 60px; */
+    /* margin: 100px 200px; */
+    /* margin: 20px 30px 40px; */
+    margin: auto;
+    padding: 20px;
+    /* padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; */
+    border-radius: 6px;
+    outline: 2px solid blue;
+    -webkit-text-stroke: 1px black;
+}
+
+.text:hover {
+    box-shadow: 10px 10px 20px grey;
+}
+
+.bb {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}

@@ -1,0 +1,20 @@
+
+.bd{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150px;
+    letter-spacing: 7px;
+    font-variant: small-caps;
+    -webkit-text-stroke: 2px rgb(37, 69, 187);
+    color: rgb(245, 241, 8);
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px black;
+    font-style: italic;
+    padding:30px  ;
+    width: max-content;
+    margin: auto;
+    border: 6px solid rgb(23, 85, 171);
+    outline: 6px dashed  rgb(23, 85, 171);
+    border-radius: 6px;
+    margin-top:150px;
+    box-shadow: 0 0 18px black, 0 0 18px black inset;
+}

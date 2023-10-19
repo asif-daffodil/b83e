@@ -1,0 +1,24 @@
+.bd {
+    font-size: 66px;
+    letter-spacing: 6px;
+    font-variant: small-caps;
+    font-family: Arial;
+    -webkit-text-stroke: 3px rgb(219, 14, 14);
+    color: rgb(18, 127, 71);
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px rgb(128, 33, 104);
+    font-style: italic;
+    padding: 20px;
+    width: max-content;
+    margin: auto;
+    border: 6px solid rgb(173, 120, 47);
+    outline: 6px dashed rgb(164, 7, 7);
+    border-radius: 6px;
+    margin-top: 80px;
+    box-shadow: 0 0 18px black, 0 0 18px black inset;
+}
+
+.flag {
+    padding-top: 5%;
+    padding-left: 37%;
+}
