@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 200px;
+    height: 200px;
+    background: #000;
+    position: relative;
+    z-index: -1;
+}
+
+.pain {
+    width: 200px;
+    height: 200px;
+    background: brown;
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+
+.rain {
+    width: 100px;
+    height: 100px;
+    background: #00f;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.jawan::before {
+    content: "Mr. ";
+}
+.jawan::after {
+    content: " Khan";
+}
+.jawan:hover::after{
+    content: attr(patha);
+}
