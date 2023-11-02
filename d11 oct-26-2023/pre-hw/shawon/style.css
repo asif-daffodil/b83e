@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top right, #6C8DCC, #8460B0, #BA8DF2, #A284CF);
+    display: grid;
+    place-items: center;
+}
+.country{
+    width: 100%;
+    height: 250px;
+    display: grid;
+    place-items: center;
+    /* background-color: lightblue; */
+}
+.country-title{
+    width: max-content;
+    height: max-content;
+    background: url("./img/Flag.jpg");
+    font-style: italic;
+    font-size: calc(170vw / 15);
+    font-weight: bolder;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    color: transparent;
+    padding: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px #073283;
+    border-width: 15px;
+    border-style: solid;
+    border-image: url("./img/Flag.jpg") 20 round;
+    border-radius: 20px;
+    clip-path: polygon(0px 12px, 12px 12px, 0px 0px, calc(100% - 1px) 0px, calc(100% - 12px) 12px, calc(100% - 0px) 12px, calc(100% - 0px) calc(100% - 12px), calc(100% - 12px) calc(100% - 12px), calc(100% - 0px) calc(100% - 0px), 0px calc(100% - 0px), 12px calc(100% - 12px), 0px calc(100% - 12px));
+    background-attachment: fixed;
+}

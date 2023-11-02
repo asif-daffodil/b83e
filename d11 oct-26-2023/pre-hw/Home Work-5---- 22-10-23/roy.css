@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: linear-gradient(to top right, #3d97bb, #fff, #d22b2b);
+    min-height: 150vh;
+
+}
+
+.wrapper{
+    width: max-content;
+    height: max-content;
+    background: url(./img/photo-.avif);
+    font-size: calc(100vw/12);
+    color: transparent;
+    font-weight: bolder;
+    /* -webkit-background-clip: text; */
+    -webkit-text-stroke: 1px rgb(220, 216, 12);
+    letter-spacing: 1rem;
+    font-style: italic;
+    margin: 30px auto;
+
+    border-image: url(./img/premium.avif);
+    border-style: solid;
+    border-radius: 20px;
+    padding: 20px;
+    clip-path: polygon(0px 12px, 12px 12px, 12px 0px, calc(100% - 12px) 0px,  calc(100% - 12px) 12px, calc(100% - 0px) 12px, calc(100% - 0px) calc(100% - 12px), calc(100% - 12px) calc(100% - 12px), calc(100% - 12px) calc(100% - 0px), 12px calc(100% - 0px), 12px calc(100% - 12px), 0px calc(100% - 12px)); 
+
+
+}
+.corona{
+   background: url(./img/corona.avif);
+
+}

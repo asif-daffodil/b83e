@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+            font-family
+font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Roboto Mono', monospace;
+ */
+
+.edu {
+    font-family: 'Edu TAS Beginner', cursive;
+
+}
+
+.playpen {
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.mono {
+    font-family: 'Edu TAS Beginner', cursive;
+
+}
+
+.wapper-main {
+    padding-top: 5rem;
+
+
+}
+
+.wapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f5f6f7;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.wapper-box {
+    width: 320px;
+    height: 1936px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart {
+    width: 320px;
+    height: 438px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+
+}
+
+.img {
+    width: 100%;
+    height: 282px;
+}
+
+.img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.img-title {
+    width: 320px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 10px 15px 10px;
+
+}
+
+.cart-2 {
+    width: 320px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.img-2 {
+    width: 100%;
+    height: 388px;
+}
+
+.img-2:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.img-2-title {
+    width: 320px;
+    height: 90px;
+    padding: 15px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wapper-box2 {
+    width: 320px;
+    height: 2150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-3 {
+    width: 320px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+
+}
+
+.imag {
+    width: 100%;
+    height: 200px;
+}
+
+.imag:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.imag-title {
+    width: 319px;
+    height: 100px;
+    padding: 15px 10px 15px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cart-4 {
+    width: 320px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+}
+
+.image:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.image-title {
+    width: 319px;
+    height: 100px;
+    padding: 15px 10px 15px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cart-5 {
+    width: 320px;
+    height: 324px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+
+}
+
+image {
+    width: 320px;
+    height: 295px;
+}
+
+.image-title {
+    width: 320px;
+    height: 115px;
+    padding: 15px 10px 15px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wapper-box4 {
+    width: 320px;
+    height: 2048px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box-3 {
+    width: 320px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+
+.images {
+    width: 320px;
+    height: 380px;
+}
+
+.images:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.images-title {
+    width: 320px;
+    height: 108px;
+}

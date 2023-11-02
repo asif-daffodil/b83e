@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sam{
+    width: 100%;
+    height: 300vh;
+    background: linear-gradient(100deg, rgb(13, 13, 110), rgba(10, 147, 118, 0), gray, black);
+    display: grid;
+    place-items: center;
+}
+.sad{
+    width: 50%;
+    height: 150vh;
+    background: url(./golp.jpeg);
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    font-size: 100px;
+    font-family: arial;
+    letter-spacing: 6px;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px black;
+    background-attachment: fixed;
+}
+.sad{
+    width: fit-content;
+    height: fit-content;
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image: url(./golp.jpeg) 30 round;
+    clip-path: polygon(0 7.99%, 2.5% 7.99%, 2.5% 0, 97.40% 0, 97.40% 8%, 100% 8%,100% 92%, 97.50% 92%, 97.50% 100%,2.59% 100%, 2.59% 92%, 0 92%);
+}

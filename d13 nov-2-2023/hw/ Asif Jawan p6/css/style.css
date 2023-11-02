@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px 30px ;
+    
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.row{
+    display: flex;
+    gap: 20px;
+
+}
+h1{
+    background-color: rgb(3, 1, 1);
+    color: white;
+    font-size: 70px;
+    padding: 20px 50px;
+    width: max-content;
+    text-align: center;
+    margin-left:400px ;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+.gallery{
+    display: flex;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+button{
+    padding:15px 50px ;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    width:max-content;
+    margin-left: 550px;
+}
+button:hover{
+    background-color: rgb(179, 76, 76);
+    /* background-color: rgb(133, 41, 41); */
+    cursor: pointer;
+}
+img:hover{
+    opacity: .5;
+    transition: .9s;
+}
+h1:hover{
+    background-color: rgb(179, 76, 76);
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 750px){}
+.row{
+    flex-direction: column;
+    h1{
+        font-size: 50px;
+    }
+} */

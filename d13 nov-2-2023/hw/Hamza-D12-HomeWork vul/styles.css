@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f6f7;
+}
+
+.main {
+  width: 80%;
+  height: 100vh;
+  background-color: #f5f6f7;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 30px auto;
+  justify-content: space-evenly;
+}
+
+.maintwo {
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 3px dimgray;
+}
+
+.mainthree {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 3px dimgray;
+}
+
+.maintwoImg {
+  background: url("https://source.unsplash.com/random/500x700");
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.maintwoText {
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  color: dimgray;
+}

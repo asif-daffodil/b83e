@@ -1,0 +1,91 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap'); */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:Corona ;
+    src: url(./fonts/Eagle_Lake/EagleLake-Regular.ttf);
+}
+.container{
+    
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px 0px  20px;
+}
+
+.container .Heading{
+  padding-bottom:50px ;
+}
+
+.container .Heading h3{
+   font-size: 3em;
+   font-weight: bolder;
+   padding-bottom: 10px;
+   border-bottom:  5px solid  rgb(45, 187, 149);
+}
+.container .Heading h3 span{
+    font-family: 'Open Sans', sans-serif;
+   font-weight: 100;
+
+}
+
+.container .box{
+    
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .box .dream{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+   
+}
+.container .box .dream img{
+ width: 100%;
+ padding-bottom: 15px;
+ border-radius: 8px;
+   
+}
+
+.paragraph{
+   
+    margin: 10px;
+    width: 100%;
+   background: rgb(233, 223, 223);
+    justify-content: center;
+    border-radius: 8px;
+
+
+}
+.pra{
+    margin-bottom: 10px;
+    text-align: center;
+ 
+
+}
+.pra h5{
+    font-family:Corona;
+}
+
+/*  hover effect */
+
+.paragraph:hover img{
+ 
+    -webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	 transition: .3s ease-in-out; 
+      
+   }

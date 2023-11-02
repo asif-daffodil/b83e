@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pain {
+    width: 23%;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 0 6px #ccc;
+    margin-bottom: 16px;
+}
+
+.card:hover {
+    box-shadow: 0 0 6px #333;
+}
+
+.card > div {
+    padding: 12px;
+}
+
+.card > img {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    object-fit: cover;
+}
+
+.pain:first-child > .card:first-child > img {
+    height: 200px;
+}
+.pain:first-child > .card:nth-child(2) > img {
+    height: 300px;
+}
+.pain:first-child > .card:nth-child(3) > img {
+    height: 220px;
+}
+.pain:first-child > .card:last-child > img {
+    height: 260px;
+}
+
+.pain:nth-child(2) > .card:first-child > img {
+    height: 300px;
+}
+.pain:nth-child(2) > .card:nth-child(2) > img {
+    height: 250px;
+}
+.pain:nth-child(2) > .card:nth-child(3) > img {
+    height: 210px;
+}
+.pain:nth-child(2) > .card:last-child > img {
+    height: 180px;
+}
+
+.pain:nth-child(3) > .card:first-child > img {
+    height: 150px;
+}
+.pain:nth-child(3) > .card:nth-child(2) > img {
+    height: 260px;
+}
+.pain:nth-child(3) > .card:nth-child(3) > img {
+    height: 316px;
+}
+.pain:nth-child(3) > .card:last-child > img {
+    height: 300px;
+}
+
+.pain:last-child > .card:first-child > img {
+    height: 250px;
+}
+.pain:last-child > .card:nth-child(2) > img {
+    height: 160px;
+}
+.pain:last-child > .card:nth-child(3) > img {
+    height: 180px;
+}
+.pain:last-child > .card:last-child > img {
+    height: 320px;
+}
+
+.card > div > h2 {
+    margin-bottom: 6px;
+}
+
+.card > div > p {
+    font-style: italic;
+    margin-bottom: 9px;
+}
+
+.card > div > button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background: #333;
+    cursor: pointer;
+    color: #fff;
+}

@@ -1,0 +1,43 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }
+ .main{
+    width: 90%;
+    height: 1500px;
+    background-color: bisque;
+    margin: 30px auto;
+    display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+flex-direction: column;
+ }
+ .box{
+   width: 250px;
+   height: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 2px solid white;
+   position: relative;
+   top: 5px;
+   
+  
+ }
+  .box::before{
+    content: " The many producers of bicycles adapted their designs to accommodate the new internal combustion engine." ;
+    background: white;
+    position: absolute;
+    width:auto;
+    height: max-content;
+    text-align: center;
+    line-height: 20px;
+    bottom: -42px;
+}
+  .box:hover{
+    opacity: 0.5;
+  }
+  

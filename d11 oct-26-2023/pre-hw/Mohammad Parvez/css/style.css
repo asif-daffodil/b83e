@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top left, #780404, #e8a55e83, #085c25);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+        
+}
+
+.text-content {
+    width: max-content;
+    height: max-content;       
+    background: url(../images/wallpaper01.jpg);
+    background-size: cover;
+    display: grid;
+    place-items: center;    
+    font-size: 130px;
+    font-weight: bolder;
+    font-family: Arial;
+    font-style: italic;
+    font-variant: small-caps;
+    color: rgba(165, 64, 14, 0.863);    
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px rgb(45, 153, 80);
+    /* background-attachment: fixed; */
+    margin: 20px;
+    border-width: 12px;
+    border-style: solid;
+    border-image: url(../images/border.jpg) 15 round;
+    border-radius: 20px;
+    padding: 20px;
+        
+    clip-path: polygon(0px 10px, 10px 10px, 10px 0px, calc(100% - 10px) 0px,  calc(100% - 10px) 10px, calc(100% - 0px) 10px, calc(100% - 0px) calc(100% - 10px), calc(100% - 10px) calc(100% - 10px), calc(100% - 10px) calc(100% - 0px), 10px calc(100% - 0px), 10px calc(100% - 10px), 0px calc(100% - 10px));
+
+    box-shadow: 0 0 25px black, 0 0 25px rgb(113, 5, 5) inset;
+    transition: box-shadow .3s;
+    /* width: 300px;
+    height: 500px; */
+    margin: 50px;
+    border-radius:10px;
+    /* border: 5px solid #ccc; */
+    /* background: #fff; */
+    float: left;
+            
+}
+
+.text-content:hover {
+    box-shadow: 0 0 11px rgba(6, 226, 211, 0.907)
+}
+
