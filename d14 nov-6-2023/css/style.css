@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url("../images/cursor.png"), auto;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-gap: 6px;
+    padding: 6px;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    /* grid-template-areas: 
+        "area1 area1 area2 area3"
+        "area4 area5 area6 area3"
+        "area7 area8 area9 area9"; */
+}
+
+.main > div {
+    display: grid;
+    place-items: center;
+    font-size: 56px;
+    color: #fff;
+}
+
+.main > div:first-child {
+    /* grid-area: area1; */
+    background: red;
+}
+
+.main > div:nth-child(2) {
+    /* grid-area: area2; */
+    background: green;
+}
+
+.main > div:nth-child(3) {
+    /* grid-area: area3; */
+    background: blue;
+}
+
+.main > div:nth-child(4) {
+    /* grid-area: area4; */
+    background: hotpink;
+}
+
+.main > div:nth-child(5) {
+    /* grid-area: area5; */
+    background: cornflowerblue;
+}
+
+.main > div:nth-child(6) {
+    /* grid-area: area6; */
+    background: limegreen;
+}
+
+.main > div:nth-child(7) {
+    /* grid-area: area7; */
+    background: orangered;
+}
+
+.main > div:nth-child(8) {
+    /* grid-area: area8; */
+    background: dodgerblue;
+}
+
+.main > div:last-child {
+    /* grid-area: area9; */
+    background: purple;
+}
