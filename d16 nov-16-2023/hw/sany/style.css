@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Edu+TAS+Beginner&family=Josefin+Sans:ital,wght@1,200&family=Playpen+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ddd;
+    font-family: 'Playpen Sans', cursive;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+.box-content{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+.box:hover .box-content{
+    transform: rotateY(180deg);
+}
+.box-front,
+.box-back{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    color: #ddd;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.box-front p{
+    font-size: 40px;
+    text-align: center;
+}
+.box-front{
+    background: #1a7cdd;
+}
+.box-back{
+    background: #2c3e50;
+    transform: rotateY(180deg);
+}
+.box-back p{
+    font-size: 30px;
+    text-align: center;
+}

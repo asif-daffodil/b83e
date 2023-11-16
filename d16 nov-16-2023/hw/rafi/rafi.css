@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: gray;
+}
+.main{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 50px auto;
+  }
+  .flip{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+
+  .flip:hover{
+    transform:rotateX(180deg);
+  }
+
+  .flip>div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .flip>div:first-child{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+  }
+
+  .flip>div:last-child{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    transform:rotateX(180deg);
+  }

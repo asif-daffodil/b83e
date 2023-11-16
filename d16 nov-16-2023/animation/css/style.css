@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.sakib {
+    width: 300px;
+    height: 300px;
+    background: url("../images/sakib-sakib-khan.gif");
+    background-size: cover;
+    position: relative;
+}
+
+.a, .b, .c, .d {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.a {
+    background: url("../images/apu.jpg");
+    background-size: cover;
+    animation: apu 4s infinite linear;
+}
+
+.b {
+    background: url("../images/bubli.jpg");
+    background-size: cover;
+    animation: bubly 4s infinite linear;
+}
+
+.c {
+    background: url("../images/chery.jpg");
+    background-size: cover;
+    bottom: -75px;
+    right: -75px;
+    animation: puja 4s infinite linear;
+}
+
+.d {
+    background: url("../images/dighi.jpg");
+    background-size: cover;
+    bottom: -75px;
+    left: -75px;
+    animation: dighi 4s infinite linear;
+}
+
+@keyframes apu {
+    0% {
+        top: -75px;
+        left: -75px;
+    }
+    25% {
+        top: -75px;
+        left: 225px;
+    }
+    50% {
+        top: 225px;
+        left: 225px;
+    }
+    75% {
+        top: 225px;
+        left: -75px;
+    }
+    100% {
+        top: -75px;
+        left: -75px;
+    }
+}
+
+@keyframes bubly {
+    0% {
+        top: -75px;
+        right: -75px;
+    }
+    25% {
+        top: 225px;
+        right: -75px;
+    }
+    50% {
+        top: 225px;
+        right: 225px;
+    }
+    75% {
+        top: -75px;
+        right: 225px;
+    }
+    100% {
+        top: -75px;
+        right: -75px;
+    }
+}
+
+@keyframes puja {
+    0% {
+        bottom: -75px;
+        right: -75px;
+    }
+    25% {
+        bottom: -75px;
+        right: 225px;
+    }
+    50% {
+        bottom: 225px;
+        right: 225px;
+    }
+    75% {
+        bottom: 225px;
+        right: -75px;
+    }
+    100% {
+        bottom: -75px;
+        right: -75px;
+    }
+}
+
+@keyframes dighi {
+    0% {
+        bottom: -75px;
+        left: -75px;
+    }
+    25% {
+        bottom: 225px;
+        left: -75px;
+    }
+    50% {
+        bottom: 225px;
+        left: 225px;
+    }
+    75% {
+        bottom: -75px;
+        left: 225px;
+    }
+    100% {
+        bottom: -75px;
+        left: -75px;
+    }
+}

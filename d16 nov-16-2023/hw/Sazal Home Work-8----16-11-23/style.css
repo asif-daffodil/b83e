@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  background:#34495e;
+  margin:0;
+  height:100vh
+
+}
+.doctorStrange{
+    width:50%;
+    margin:5px;
+    border-radius:2% 2%;
+}
+
+label{
+    display: block;
+    position: absolute;
+    width:280px;
+    height:400px;
+    top:30%;
+    left:50%;
+    perspective:1000px;
+    transform-style:preserve-3d;
+    transform: translate(-50%, -50%);
+    cursor:pointer;
+}
+
+.flip-card{
+    
+    position: relative;
+    width:100%;
+    height:100%;
+    transition: all 500ms ease-in-out;
+    transform-style:preserve-3d;
+    z-index:1;
+    animation: rotateCard 2000ms;
+}
+.flip-card .front,
+.flip-card .back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  background:#fff;
+  backface-visibility:hidden;
+}
+
+
+.flip-card .front{
+    background:#0b1185;
+}
+.doctor{
+    margin-top: 20px;
+}
+.flip-card .back{
+    border-radius:20px 0 20px 0;
+}
+
+
+.flip-card .back{
+    transform: rotateX(180deg);
+    color:#000;
+    background:#253373
+}
+label:hover .flip-card{
+    transform: rotateX(10deg)  rotateY(-10deg);
+    box-shadow:10px 20px 30px #06092b;
+    border-radius:0 20px 0 20px
+}
+input{
+    display:none;
+}
+
+:checked + .flip-card{
+    transform:rotateX(180deg);
+  }
+  label:hover :checked + .flip-card{
+    transform: rotateX(180deg);
+    box-shadow:0 -20px 50px rgba(255, 255, 255, 0.2);
+    border-radius:0 20px 0px 20px;
+  }
+
+  .front h1{
+    font-size: 22px;
+    color:#d9e0e8;
+    margin: 0;
+  }
+  .front h2{
+    font-size:17px;
+    color:#4e698d;
+    margin:7px 0; 
+  }
+  .front b{
+    font-size:15px;
+    color:#4a8f87;
+    margin:10px; 
+  }
+  .front p{
+    font-size:20px;
+    font-weight:bold;
+    color:#edf6e6;
+    margin:10px;
+
+  }
+  .back h1{
+    color:#fff;
+    margin:35px;
+  }
+  .back p{
+    color:#fff;
+    margin:10px;
+  
+  }
+  .back .click{
+    margin:20px;
+    font-size:px;
+    font-weight:bold;
+
+  }
+  
+
+
+
+  
