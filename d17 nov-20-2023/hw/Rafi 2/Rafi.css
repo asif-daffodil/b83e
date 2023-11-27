@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flip{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 50px auto;
+  }
+  .flip_0{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+
+  .flip_0:hover{
+    transform:rotateY(180deg);
+  }
+
+  .flip_0>div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+  }
+
+  .flip_0>div:first-child{
+    background-color: red;
+    font-size: 30px;
+    color: blue;
+  }
+
+  .flip_0>div:last-child{
+    background-color: blue;
+    font-size: 30px;
+    color: red;
+    font-style: italic;
+    transform:rotateY(180deg);
+  }
+  .a{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+.xbox{
+    height: 200px;
+    width: 300px;
+    position: relative;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 150px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    color: blueviolet;
+    font-size: 50px;
+    border: 5px solid black;
+    background: url(https://media.istockphoto.com/id/1160720443/vector/abstract-simple-geometric-vector-seamless-pattern-with-gold-line-texture-on-white-background.jpg?s=612x612&w=0&k=20&c=_kgBISj1Wio4LTRdBFN3IttmunACCl1-T5VKdurvb68=);
+}
+.ccc{
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  animation: pc 3s infinite linear;
+  animation-timing-function: cubic-bezier(.001, 1, 1, .001);
+}
+.d{
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  animation: cp 3s infinite linear;
+  animation-timing-function: cubic-bezier(.001, 1, 1, .001);
+}
+@keyframes pc {
+    0%{
+        background: red;
+        top: -5px;
+        left: -5px;
+    }
+    25%{
+      background: green;
+      top: -5px;
+      left: 270px;
+    }
+    50%{
+        background: blue;
+        top: 170px;
+        left: 270px;
+    }
+    75%{
+        background: green;
+        top: 170px;
+        left: -5px;
+    }
+    100%{
+        background: red;
+        top: -5px;
+        left: -5px;
+    }
+}
+@keyframes cp {
+  0%{
+      background: red;
+      top: 170px;
+      left: 270px;
+  }
+  25%{
+    background: green;
+    top: 170px;
+    left: -5px;
+  }
+  50%{
+      background: blue;
+      top: -5px;
+      left: -5px;
+  }
+  75%{
+      background: green;
+      top: -5px;
+      left: 270px;
+  }
+  100%{
+      background: red;
+      top: 170px;
+      left: 270px;
+  }
+}

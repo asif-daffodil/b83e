@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+body{
+    background: #03042c;
+}
+.main{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.pain{
+    text-transform:uppercase;
+    font-size:6vw;
+    letter-spacing:1vw;
+    color: #03042c;
+    border:.3vw solid #fff;
+    border-radius: 6px;
+    padding:3vw;
+    position:relative;
+    overflow:hidden
+}
+.pain::before{
+    content:"";
+    position:absolute;
+    width:calc(100% - 2vw);
+    height:calc(100% - 2vw);
+    background:url("./natural\ imge.jpg");
+    object-fit: cover;
+    z-index:-2;
+    top:.7vw;
+    left:.7vw;
+    border:.3vw solid #fff;
+}
+.pain::after{
+    content:"";
+    position:absolute;
+    width:130%;
+    height:50%;
+    background:linear-gradient(to top right, black , red , blue,lightblue );
+    z-index:-3;
+    top:50%;
+    left:50%;
+    animation:after 2s infinite linear;
+}
+@-webkit-keyframes after{
+    0%{
+        transform:translate(-50%, -50%) rotate(0)
+        }
+    100%{
+        transform:translate(-50%, -50%) rotate(360deg)
+        }
+    }
+.flip-box{
+    width:300px;
+    height:200px;
+    perspective:1000px;
+    margin-bottom:20px;  
+}
+.flip-box-inner{
+    position:relative;
+    width:100%;
+    height:100%;
+    text-align:center;
+    transition:transform .8s;
+    transform-style:preserve-3d;
+}
+.flip-box:hover .flip-box-inner{
+    transform:rotateX(180deg);
+}
+.flip-box-front,.flip-box-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.flip-box-front{
+    background: url(./natural\ imge.jpg);
+    object-fit: cover;
+    color:#03042c;
+    border-radius: 6px;
+}
+.flip-box-back{
+    color:#0ff;
+    transform:rotateX(180deg);
+    border-radius: 6px;
+    box-shadow: inset 0 0 60px whitesmoke,
+                inset 20px 0 80px #f0f,
+                inset 20px 0 80px #0ff,
+                inset 20px 0 300px #f0f,
+                inset -20px 0 300px #0ff,
+                0 0 50px #fff,
+                -10px 0 80px #f0f,
+                10px 0 80px #0ff;
+}

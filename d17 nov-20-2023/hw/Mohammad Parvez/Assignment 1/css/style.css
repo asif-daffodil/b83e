@@ -1,0 +1,528 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: black;
+}
+
+.our_solar_system {
+    position: absolute;
+    width: 1660px;
+    height: 1660px;
+    background: transparent;
+    border: transparent;
+    border-left: 2px solid rgba(214, 214, 214, 0.40);
+
+    border-radius: 50%;
+    animation: our 5s linear infinite;
+}
+
+@keyframes our {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.star_one {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: rgb(255, 255, 255);
+    z-index: 100;
+    position: absolute;
+    top: -1%;
+    left: 45%;
+}
+
+.star_two {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(255, 0, 0);
+    z-index: 100;
+    position: absolute;
+    top: 9%;
+    left: 37%;
+    opacity: 0;
+    transition: all linear 5s;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px #ff0000;
+    animation: star 15s linear infinite;
+}
+
+@keyframes star {
+
+    100% {
+        opacity: 1;
+        top: 36%;
+        left: 40%;
+    }
+}
+
+.star_three {
+    font-size: 24px;
+    z-index: 100;
+    position: absolute;
+    top: 90%;
+    left: -20%;
+    opacity: 0;
+    color: #ffffff;
+    transition: all linear 5s;
+    transform: scale(1.2);
+    animation: star_three 15s linear infinite;
+}
+
+@keyframes star_three {
+    100% {
+        opacity: 1;
+        top: 55%;
+        left: 45%;
+    }
+}
+
+.gallexy span:nth-child(1) {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 85%;
+    left: 75%;
+    animation: one_two 1s linear infinite;
+}
+
+.gallexy span:nth-child(2) {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    animation: one_two 1.5s linear infinite;
+}
+
+@keyframes one_two {
+    from {
+        transform: scale(1.9);
+    }
+}
+
+.gallexy span:nth-child(3) {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 35%;
+    left: 83%;
+    animation: three_four 1.5s linear infinite;
+}
+
+.gallexy span:nth-child(4) {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 53%;
+    left: 7%;
+    animation: three_four 2s linear infinite;
+}
+
+@keyframes three_four {
+    from {
+        width: 15px;
+        height: 15px;
+        transform: scale(1.4);
+    }
+}
+
+.gallexy span:nth-child(5) {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 90%;
+    left: 39%;
+    animation: five_six 1.5s linear infinite;
+}
+
+.gallexy span:nth-child(6) {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 60%;
+    left: 43%;
+    animation: five_six 1.5s linear infinite;
+}
+
+@keyframes five_six {
+    from {
+        width: 15px;
+        height: 15px;
+        transform: scale(1.4);
+    }
+}
+
+.gallexy {
+    width: 1400px;
+    height: 1400px;
+    border-radius: 50%;
+    border: 1px dashed rgba(214, 214, 214, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: pluto 20s linear infinite;
+}
+
+@keyframes pluto {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallexy img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    animation: naptune_img 15s linear infinite;
+}
+
+@keyframes naptune_img {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallexy_one {
+    width: 1250px;
+    height: 1250px;
+    border-radius: 50%;
+    border: 1px dashed rgba(214, 214, 214, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: naptune 25s linear infinite;
+}
+
+@keyframes naptune {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallexy_one img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 91%;
+    left: 24%;
+}
+
+.gallexy_two {
+    width: 1100px;
+    height: 1100px;
+    border-radius: 50%;
+    border: 1px dashed rgba(214, 214, 214, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: uranus 20s linear infinite;
+}
+
+@keyframes uranus {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallexy_two img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 56%;
+    left: 94%;
+}
+
+.gallexy_three {
+    width: 950px;
+    height: 950px;
+    border-radius: 50%;
+    border: 1px dashed rgba(214, 214, 214, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: saturn 35s linear infinite;
+}
+
+@keyframes saturn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallexy_three img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 14%;
+    left: 3%;
+}
+
+.gallexy_four {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px dashed rgba(214, 214, 214, 0.20);
+    animation: jupiter 30s linear infinite;
+}
+
+@keyframes jupiter {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallexy_four img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1%;
+    left: 69%;
+}
+
+.gallexy_five {
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    background: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed rgba(214, 214, 214, 0.20);
+    animation: mars infinite 40s linear;
+}
+
+@keyframes mars {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallexy_five img {
+    width: 60px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    top: 53%;
+    left: -5%;
+}
+
+.gallexy_six {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px dashed rgba(214, 214, 214, 0.20);
+    animation: earth 45s linear infinite;
+}
+
+@keyframes earth {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallexy_six img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 91%;
+    left: 42%;
+}
+
+.moon_cyrcle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 1px dashed transparent;
+    position: absolute;
+    top: 88%;
+    left: 39%;
+    animation: moon 5s linear infinite;
+}
+
+@keyframes moon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.moon_cyrcle img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.gallexy_seven {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px dashed rgba(214, 214, 214, 0.20);
+    animation: venus 40s linear infinite;
+}
+
+@keyframes venus {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallexy_seven img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    top: 32%;
+    left: 90%;
+}
+
+.gallexy_eight {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px dashed rgba(214, 214, 214, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: mercury 35s linear infinite;
+}
+
+@keyframes mercury {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallexy_eight img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: -14%;
+    left: 34%;
+}
+
+.gallexy_nine {
+    border: none;
+    background: transparent;
+}
+
+.gallexy_nine img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 13%;
+    left: 13%;
+    animation: sun 50s linear infinite;
+}
+
+@keyframes sun {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    to {
+        transform: rotate(36deg);
+    }
+}

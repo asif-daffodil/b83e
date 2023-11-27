@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.fat{
+    width: 300px;
+    height: 300px;
+    background: url("../img/fat\ lazy.jpg");
+    background-size: cover;
+    position: relative;
+}
+.a,.b,.c,.d{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+}
+
+.a{
+    background: url("../img/burger.jpg");
+    background-size: cover;
+   
+    animation: bg 4s infinite linear ;
+}
+.b{
+    background: url("../img/hotdog.png");
+    background-size: cover;
+    animation: dg 4s infinite linear;
+}
+.c{
+    background: url("../img/pizza.jpg");
+    background-size: cover;
+    animation: piz 4s infinite linear;
+}
+.d{
+    background: url("../img/cake.jpg");
+    background-size: cover;
+    animation: ck 4s infinite linear;
+}
+@keyframes bg{
+    0%{ top: -75px; 
+        left: -75px;}
+    25%{
+        top: -75px; 
+        left: 225px;
+    }      
+    50%{
+        top: 225px; 
+        left: 225px;
+    }      
+    75%{
+        top:225px ; 
+        left: -75px;
+    }      
+
+    100%{ top: -75px; 
+    left: -75px;}
+}
+@keyframes dg{
+
+    0%{ top: -75px; 
+        right: -75px;}
+    25%{
+        top: 225px; 
+        right: -75px;
+    }      
+    50%{
+        top: 225px; 
+        right: 225px;
+    }      
+    75%{
+        top: -75px ; 
+        right: 225px;
+    }      
+
+    100%{ top: -75px; 
+    right: -75px;
+}
+}
+@keyframes piz{
+
+    0%{ bottom: -75px; 
+        right: -75px;}
+    25%{
+        bottom: -75px; 
+        right: 225px;
+    }      
+    50%{
+        bottom: 225px; 
+        right: 225px;
+    }      
+    75%{
+        bottom: 225px ; 
+        right: -75px;
+    }      
+
+    100%{ bottom: -75px; 
+    right: -75px}
+}
+@keyframes ck {
+    0%{ bottom: -75px; 
+        left: -75px;}
+    25%{
+        bottom: 225px; 
+        left: -75px;
+    }      
+    50%{
+        bottom: 225px; 
+        left: 225px;
+    }      
+    75%{
+        bottom:-75px ; 
+        left: 225px;
+    }      
+
+    100%{ bottom: -75px; 
+    left: -75px;}
+}
+h1{
+    text-align: center;
+    font-family: fantasy;
+    color:white;
+    background: linear-gradient(red,blue,black );
+    width: max-content;
+    border: 5px solid gray;
+    
+}

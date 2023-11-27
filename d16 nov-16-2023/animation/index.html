@@ -15,8 +15,8 @@
             <div class="d"></div>
         </div>
     </div>
-    <!-- link jquery -->
-    <script src="./js/jquery-3.5.1.min.js"></script>
+    <!-- link jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- stop right click -->
     <script>
         $(document).ready(function(){
@@ -37,6 +37,14 @@
     <script>
         $(document).keydown(function(e){
             if(e.ctrlKey && e.keyCode === 85){
+                return false;
+            }
+        });
+    </script>
+    <!-- stop source code -->
+    <script>
+        $(document).keydown(function(e){
+            if(e.ctrlKey && e.shiftKey && e.keyCode === 73){
                 return false;
             }
         });

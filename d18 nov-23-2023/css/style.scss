@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    nav{
+        padding: 0 40px;
+        >img{
+            height: 80px;
+        }
+        width: 1200px;
+        background: rgba(0,0,0,1);
+        display: flex;
+        justify-content: space-between;
+        .menu {
+            width: 750px;
+            list-style: none;
+            display: flex;
+            text-align: center;
+            li{
+                width: 100%;
+                position: relative;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    line-height: 80px;
+                    display: block;
+                }
+                &::before{
+                    content: "";
+                    width: 0%;
+                    height: 6px;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    background: #66f;
+                    transition: 0.5s;
+                    transform: translateX(-50%);
+                }
+                &:hover::before{
+                    width: 100%;
+                }
+                >.submenu{
+                    list-style: none;
+                    position: absolute;
+                    top: -120px;
+                    transition: 0.5s;
+                    left: 0;
+                    width: 100%;
+                    background: rgba(0,0,0,0.6);
+                    visibility: hidden;
+                    z-index: -1;
+                    >li{
+                        >a{
+                            line-height: 50px;
+                        }
+                    }
+                }
+                &:hover{
+                    .submenu{
+                        visibility: visible;
+                        top: 80px;
+                        transition: 0.5s;
+                    }
+                }      
+            }
+        }
+    }
+    >img{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+    }
+}

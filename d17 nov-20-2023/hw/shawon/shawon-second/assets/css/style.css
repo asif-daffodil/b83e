@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main__section{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.animation__thumbnail{
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+.animation__thumbnail > img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    object-fit: cover;
+}
+.card__thumbnail-first,
+.card__thumbnail-second,
+.card__thumbnail-third,
+.card__thumbnail-fourth{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.card-img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid darkmagenta;
+    border-radius: 10%;
+}
+.card__thumbnail-first{
+    background-size: cover;
+    animation: first 2s infinite linear;
+}
+
+.card__thumbnail-second{
+    background-size: cover;
+    animation: second 2s infinite linear;
+}
+.card__thumbnail-third{
+    background-size: cover;
+    animation: third 2s infinite linear;
+}
+.card__thumbnail-fourth{
+    background-size: cover;
+    animation: fourth 2s infinite linear;
+}
+
+@keyframes first{
+    0%{
+        top: -100px;
+        left: -100px;
+    }
+
+    25%{
+        top: -100px;
+        left: 300px;
+    }
+
+    50%{
+        top: 300px;
+        left: 300px;
+    }
+
+    75%{
+        top: 300px;
+        left: -100px;
+    }
+
+    100%{
+        top: -100px;
+        left: -100px;
+    }
+
+}
+
+@keyframes second{
+    0%{
+        top: -100px;
+        right: -100px;
+    }
+
+    25%{
+        top: 300px;
+        right: -100px;
+    }
+
+    50%{
+        top: 300px;
+        right: 300px;
+    }
+
+    75%{
+        top: -100px;
+        right: 300px;
+    }
+
+    100%{
+        top: -100px;
+        right: -100px;
+    }
+
+}
+
+@keyframes third{
+    0%{
+        bottom: -100px;
+        right: -100px;
+    }
+
+    25%{
+        bottom: -100px;
+        right: 300px;
+    }
+
+    50%{
+        bottom: 300px;
+        right: 300px;
+    }
+
+    75%{
+        bottom: 300px;
+        right: -100px;
+    }
+
+    100%{
+        bottom: -100px;
+        right: -100px;
+    }
+
+}
+
+@keyframes fourth{
+    0%{
+        bottom: -100px;
+        left: -100px;
+    }
+
+    25%{
+        bottom: 300px;
+        left: -100px;
+    }
+
+    50%{
+        bottom: 300px;
+        left: 300px;
+    }
+
+    75%{
+        bottom: -100px;
+        left: 300px;
+    }
+
+    100%{
+        bottom: -100px;
+        left: -100px;
+    }
+}

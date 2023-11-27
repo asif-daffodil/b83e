@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.food_0{
+    width: 300px;
+    height: 300px;
+    background: url(https://blog.hubspot.com/hs-fs/hubfs/Smiling%20Leo%20Perfect%20GIF.gif?width=595&height=400&name=Smiling%20Leo%20Perfect%20GIF.gif);
+    background-size: cover;
+    position: relative;
+}
+.food_0>div{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+.food_1{
+    background: url(https://i.ebayimg.com/images/g/dJAAAOSwW6RkrzDq/s-l1600.jpg);
+    background-size: cover;
+    animation: outlast 5s infinite linear;
+}
+.food_2{
+    background: url(https://www.giantbomb.com/a/uploads/original/6/62890/1545956-ac2_ost.jpg);
+    background-size: cover;
+    animation: Assassin 5s infinite linear;
+    
+}
+.food_3{
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/23a6fce3-b635-4ab5-8fe6-e409d0a7a24a/desfnn2-f5f58199-4951-4fd2-b1e6-1cbd8b13c09e.jpg/v1/fill/w_1280,h_1920,q_75,strp/life_is_strange_movie_poster_by_windurin_desfnn2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkyMCIsInBhdGgiOiJcL2ZcLzIzYTZmY2UzLWI2MzUtNGFiNS04ZmU2LWU0MDlkMGE3YTI0YVwvZGVzZm5uMi1mNWY1ODE5OS00OTUxLTRmZDItYjFlNi0xY2JkOGIxM2MwOWUuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.VPP0Y19KpMgir4Q9pMiSkCieLl9Hwmwxdyttj-jKHS8);
+    background-size: cover;
+    animation: Life 5s infinite linear;
+}    
+.food_4{
+    background: url(https://m.media-amazon.com/images/I/5178jfyf8mL._AC_SY350_QL15_.jpg);
+    background-size: cover;
+    animation: speed 5s infinite linear;
+}
+
+@keyframes outlast {
+    0%{
+        top: -75px;
+        left: -75px;
+    }
+    25%{
+        top: 225px;
+        left: -75px;
+    }
+    50%{
+        top: 225px;
+        left: 225px;
+    }
+    75%{
+        top: -75px;
+        left: 225px;
+    }
+    100%{
+        top: -75px;
+        left: -75px;
+    }
+}
+@keyframes Assassin {
+    0%{
+        top: -75px;
+        left: 225px;
+    }
+    25%{
+        top: -75px;
+        left: -75px;
+    }
+    50%{
+        top: 225px;
+        left: -75px;
+    }
+    75%{
+        top: 225px;
+        left: 225px;
+    }
+    100%{
+        top: -75px;
+        left: 225px;
+    }
+    
+}
+@keyframes Life {
+    0%{
+        top: 225px;
+        left: 225px;
+    }
+    25%{
+        top: -75px;
+        left: 225px;
+    }
+    50%{
+        top: -75px;
+        left: -75px;
+    }
+    75%{
+        top: 225px;
+        left: -75px;
+    }
+    100%{
+        top: 225px;
+        left: 225px;
+    }
+    
+}
+@keyframes speed {
+    0%{
+        top: 225px;
+        left: -75px;
+    }
+    25%{
+        top: 225px;
+        left: 225px;
+    }
+    50%{
+        top: -75px;
+        left: 225px;
+    }
+    75%{
+        top: -75px;
+        left: -75px;
+    }
+    100%{
+        top: 225px;
+        left: -75px;
+    }
+}

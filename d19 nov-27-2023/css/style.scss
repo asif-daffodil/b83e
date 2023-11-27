@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 90vw;
+    margin: auto;
+    background: #99f;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    >img{
+        height: 30px;
+    }
+    >.menubar{
+        margin-left: auto;
+        list-style: none;
+        display: flex;
+        >li{
+            position: relative;
+            >a{
+                text-decoration: none;
+                display: block;
+                padding: 6px 20px;
+                color: #000;
+                line-height: 60px;
+            }
+            &:hover{
+                background: #9f9;
+                >.submenu{
+                    visibility: visible;
+                    top: 100%;
+                }
+            }
+            >.submenu{
+                list-style: none;
+                position: absolute;
+                top: -100%;
+                left: 50%;
+                width: 160%;
+                background: #9f9;
+                visibility: hidden;
+                transition: 0.3s;
+                z-index: -10;
+                transform: translateX(-50%);
+                >li{
+                    position: relative;
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                        line-height: 30px;
+                        display: block;
+                        text-align: center;
+                    }
+                    &:hover{
+                        background: #99f;
+                        >.subsubmenu{
+                            visibility: visible;
+                            left: 100%;
+                        }
+                    }
+                    >.subsubmenu{
+                        list-style: none;
+                        position: absolute;
+                        top: 0;
+                        left: 120%;
+                        visibility: hidden;
+                        transition: 0.3s;
+                        background: #99f;
+                        width: 100%;
+                        z-index: -40;
+                        >li{
+                            &:hover{
+                                background: #9f9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

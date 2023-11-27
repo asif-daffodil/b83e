@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bgCol1 : rgb(33, 66, 99);
+$bgCol2 : rgb(99, 66, 33);
+
+@mixin gridCenter ($ls : 3px, $tt: capitalize){
+    display: grid;
+    place-items: center;
+    letter-spacing: $ls;
+    text-transform: $tt;
+}
+
+
+.kaka{
+    color: #fff;
+    @include gridCenter(10px, uppercase);
+}
+
+.mamu{
+    width: 300px;
+    height: 300px;
+    background: $bgCol2;
+}
+
+.daddu {
+    @extend .mamu;
+    color: #fff;
+    font-weight: bolder;
+    @include gridCenter(30px, lowercase);
+    background: $bgCol1;
+}
+
+.nanu{
+    width: 200px;
+    height: 200px;
+    background: cornflowerblue;
+    @include gridCenter;
+    >.nani{
+        width: 100px;
+        height: 100px;
+        background: #fff;
+        @include gridCenter;
+        >.nannu{
+            width: 50px;
+            height: 50px;
+            background: #000;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 50%;
+                height: 50%;
+                background: #0f0;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

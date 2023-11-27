@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color:#161414 ;
+    
+}
+.animated-border {
+    display: inline-block;
+    padding: 20px;
+    font-size: 140px;
+    font-weight: bold;
+    border: 20px solid transparent;
+/*     
+    border-image: linear-gradient(45deg, red, green, blue) 1; */
+    border-image: linear-gradient(45deg, green, white, white) 1;
+    border-image-slice: 1;
+    animation: colorAnimation 10s infinite;
+    flex-wrap: wrap;
+    background-image:url(./img/istockphoto-1490964643-1024x1024.jpg);
+    background-size: cover;
+    background-color:#292626 ;
+    
+  }
+
+ @keyframes colorAnimation{
+    0%{
+        border-image-source:linear-gradient(45deg, green ,white, white) ;
+    }
+    25% {
+        border-image-source: linear-gradient(45deg, white, white, green);
+      }
+      50% {
+        border-image-source: linear-gradient(45deg, white, green, white);
+      }
+      75% {
+        border-image-source: linear-gradient(45deg, green, white, white);
+      }
+      100% {
+        border-image-source: linear-gradient(45deg, white, white, green);
+      }
+}
+

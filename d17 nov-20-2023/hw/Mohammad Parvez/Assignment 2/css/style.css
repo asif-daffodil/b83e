@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* cursor: url("../images/cursor.png"), auto; */
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.background {
+    height: 100vh;
+    background: linear-gradient(to right, #5C4B51, #8B4513);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 27%;
+    align-items: center;
+    
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    perspective: 1000px;
+    font-family: 'Arial', sans-serif;
+}
+
+.card:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 240px;
+    height: 105px;    
+}
+
+.logo {
+    font-size: 24px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: #8B4513; /* Brown color for the logo */    
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+    border-radius: 10px;
+}
+
+.front {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    animation: fadeInUp 0.5s ease; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8B4513; /* Brown color for the logo */
+}
+
+.name {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.position {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.contact, .address, .social-media {
+    text-align: center;
+}
+
+.contact img, .address img, .social-media img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.website a {
+    color: #8B4513; /* Brown color for the website link */
+}
+
+.social-media a {
+    margin: 0 5px;
+}
+
+.card:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(0);
+}
+
+
+/* Border with Animation Code Start Here */
+
+.flip-box {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    padding-top: 60px;    
+}
+
+.frame {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, #3c3c3c, #595959);
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #7b9604;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+.frame:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 5px solid #5a7001; /* Change color on hover */
+}
+
+.content {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    background: linear-gradient(to bottom, rgb(14, 105, 14), #9e1313);
+    border-radius: 10px;
+    transition: transform 0.3s, text-shadow 0.3s, background 0.3s;
+}
+
+.frame:before,
+.frame:after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 0;
+    background: linear-gradient(45deg, #e67e22, #d30400);
+    transition: height 0.3s;
+    animation: leanerAnimation 2s infinite alternate; 
+}
+
+
+.frame:before {
+    top: 0;
+    left: 0;    
+}
+
+.frame:after {
+    bottom: 0;
+    right: 0;    
+}
+
+@keyframes leanerAnimation {
+    to {
+        height: 100%;
+    }
+}
