@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    padding: 0 40px;
+    width: 750px;
+    background: gray;
+    position: relative;
+    align-items: center;
+
+    &:first-child {
+        margin: 0px auto;
+    }
+
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+li {
+    width: 100%;
+    position: relative;
+    background: gray;
+
+    >a {
+        color: black;
+        text-decoration: none;
+        line-height: 50px;
+        display: block;
+    }
+
+    &::before {
+        content: "";
+        width: 0%;
+        height: 6px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        background: red;
+        transition: 0.5s;
+        transform: translateX(-50%);
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+
+    >.submenue {
+        list-style: none;
+        visibility: hidden;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        transition: .5s;
+
+        li {
+            width: 100%;
+
+            >a {
+                color: black;
+                text-decoration: none;
+                line-height: 40px;
+                display: block;
+            }
+        }
+    }
+    &:hover>.mega{
+        visibility: visible;
+        transition: .5s;
+        top: 50px;
+    }
+
+    &:hover>.submenue {
+        visibility: visible;
+        transition: .5s;
+        top: 50px;
+
+        li {
+            width: 100%;
+
+            >a {
+                color: black;
+                text-decoration: none;
+                line-height: 40px;
+                display: block;
+            }
+        }
+    }
+
+    >.team {
+        list-style: none;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 200px;
+        width: 100%;
+        transition: .5s;
+
+        li {
+            width: 100%;
+
+            >a {
+                color: black;
+                text-decoration: none;
+                line-height: 40px;
+                display: block;
+            }
+        }
+    }
+
+    &:hover>.team {
+        visibility: visible;
+        transition: .5s;
+        left: 160px;
+
+        li {
+            width: 100%;
+
+            >a {
+                color: black;
+                text-decoration: none;
+                line-height: 40px;
+                display: block;
+            }
+        }
+    }
+    >.mega{
+        position: fixed;
+        width: 100%;
+        margin: auto;
+        top: 60px;
+        left: 0;
+        visibility: hidden;
+        height: 200px;
+        background: sandybrown;
+        >.snake{
+            width: 300px;
+            height: 200px;
+            display: absolute;
+        }
+    }
+
+}
+
+
+
+nav {
+    >img {
+        height: 50px;
+    }
+
+    width: 100%;
+    background: gray;
+    display: flex;
+    justify-content: space-between;
+}

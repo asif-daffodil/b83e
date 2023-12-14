@@ -128,6 +128,10 @@ nav {
                             color: #000;
                             line-height: 30px;
                             display: block;
+                            width: max-content;
+                            &:hover{
+                                background: #99f;
+                            }
                         }
                     }
                 }

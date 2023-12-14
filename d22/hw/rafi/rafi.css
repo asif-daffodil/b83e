@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.main>div {
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center
+}
+
+.main>div>img {
+    max-height: 160px;
+    width: max-content
+}
+
+.main>div>h3 {
+    margin-bottom: 16px
+}
+
+.main>div>ul {
+
+    width: max-content;
+    margin: auto;
+    list-style: none;
+    display: flex
+}
+
+.main>div>ul>li {
+    border: 1px solid #000;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    z-index: 10
+}
+
+.main>div>ul>li:not(:last-child) {
+    margin-right: 6px
+}
+
+.main>div>ul>li>a {
+    text-decoration: none;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    color: #000
+}
+
+.main>div>ul>li::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .5s;
+    z-index: -5
+}
+
+.main>div>ul>li:hover>a {
+    color: white
+}
+
+.main>div>ul>li:hover::before {
+    top: 0%
+}
+
+.main>div>ul>li:nth-child(1)::before {
+    background: #0675e8
+}
+
+.main>div>ul>li:nth-child(2)::before {
+    background: #1da1f2
+}
+
+.main>div>ul>li:nth-child(3)::before {
+    background: #0077b5
+}
+
+.main>div>ul>li:nth-child(4)::before {
+    background: #000
+}
+
+.main>div>ul>li:nth-child(5)::before {
+    background: #ff4500
+}
+
+.main>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -20
+}
