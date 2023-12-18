@@ -1,37 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
 }
 
 .container {
     width: 1200px;
     margin: auto;
-    >.header{
+
+    >.header {
         width: 100%;
         height: 606px;
         background: url("../images/banner1.jpg") no-repeat center / cover;
-        >.menu{
+        position: relative;
+
+        >.menu {
             padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            >.logo{
+
+            >.logo {
                 font-size: 16px;
-                color: #fff;
                 font-family: 'Orbitron', sans-serif;
             }
-            >.bar{
-                color: #fff;
+
+            >.bar {
                 font-size: 25px;
             }
+
+            margin-bottom: 60px;
         }
-        >h1{
+
+        >h1 {
             font-size: 58.75px;
-            color: #fff;
             text-align: center;
             font-family: 'Orbitron', sans-serif;
+        }
+
+        >article {
+            font-size: 11px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        >button {
+            background-color: rgb(17, 18, 18);
+            display: block;
+            margin: auto;
+            border-width: 0;
+            width: 138px;
+            height: 37px;
+            cursor: pointer;
+        }
+
+        >img {
+            width: 1083px;
+            height: 302px;
+            position: absolute;
+            left: 58px;
+            top: 353px;
+        }
+    }
+
+    >.header-gap {
+        width: 100%;
+        height: 100px;
+        background: #081a2c;
+    }
+
+    main {
+        background: url("../images/Car-Game.png") no-repeat center / cover;
+        position: relative;
+        >.ag {
+            width: 100%;
+            height: 518px;
+            position: relative;
+
+            >.ag-left {
+                position: absolute;
+                left: 235px;
+                top: 116px;
+                width: 315px;
+                height: 288px;
+                border-width: 0.506px;
+                border-color: rgb(255, 255, 255);
+                border-style: dashed;
+                text-align: center;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                >h2 {
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+
+                >article {
+                    font-size: 14px;
+                    margin-bottom: auto;
+                }
+
+                >button {
+                    background-color: rgb(17, 18, 18);
+                    border-width: 0;
+                    width: 98px;
+                    height: 26px;
+                    cursor: pointer;
+                    margin: 0 auto;
+                }
+            }
+
+            >figure{
+                width: max-content;
+                position: absolute;
+                left: 365px;
+                top: 180px;
+                >img{
+                    width: 738px;
+                    height: 189px;
+                }
+            }
+        }
+        >.htptg{
+            width: 100%;
+            height: 560px;
+            background: url("../images/banner3.jpg") no-repeat center / cover;
+        }
+        >.download{
+            width: 100%;
+            height: 970px;
+        }
+        >.contact{
+            width: 100%;
+            height: 240px;
+            background: #101a1b;
+        }
+        >.copy{
+            line-height: 36px;
+            text-align: center;
+            font-size: 14px;
         }
     }
 }
