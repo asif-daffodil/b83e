@@ -8,6 +8,24 @@
     color: #fff;
 }
 
+@mixin commonH2 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin-bottom: 36px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+    }
+}
+
 .container {
     width: 1200px;
     margin: auto;
@@ -76,6 +94,7 @@
     main {
         background: url("../images/Car-Game.png") no-repeat center / cover;
         position: relative;
+
         >.ag {
             width: 100%;
             height: 518px;
@@ -94,6 +113,7 @@
                 padding: 30px;
                 display: flex;
                 flex-direction: column;
+
                 >h2 {
                     font-weight: 600;
                     font-size: 16px;
@@ -114,32 +134,202 @@
                 }
             }
 
-            >figure{
+            >figure {
                 width: max-content;
                 position: absolute;
                 left: 365px;
                 top: 180px;
-                >img{
+
+                >img {
                     width: 738px;
                     height: 189px;
                 }
             }
         }
-        >.htptg{
+
+        >.htptg {
             width: 100%;
             height: 560px;
             background: url("../images/banner3.jpg") no-repeat center / cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            >h2 {
+                @include commonH2;
+            }
+
+            >.login {
+                border-width: 0.594px;
+                border-color: rgb(255, 255, 255);
+                border-style: dashed;
+                width: 769px;
+                height: 291px;
+                display: flex;
+
+                >div {
+                    width: 100%;
+                    padding: 24px 18px;
+
+                    >h3 {
+                        font-family: 'Orbitron', sans-serif;
+                        font-size: 14px;
+                        margin-bottom: 18px;
+                    }
+
+                    &:first-child {
+                        >form {
+                            >input[type="text"] {
+                                width: 296px;
+                                height: 36px;
+                                padding: 0 10px;
+                                border-width: 0;
+                                color: #000;
+                                margin-bottom: 18px;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+
+                            >button {
+                                width: 132px;
+                                height: 37px;
+                                background: #07bfdd;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        >h3 {
+                            visibility: hidden;
+                        }
+
+                        >table {
+                            >tbody {
+                                >tr {
+                                    display: block;
+                                    margin-bottom: 18px;
+
+                                    >td {
+                                        color: #d0d7d8;
+
+                                        &:first-child {
+                                            vertical-align: top;
+                                            font-family: 'Orbitron', sans-serif;
+                                            font-size: 18px;
+                                            padding-right: 18px;
+                                        }
+
+                                        &:last-child {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
-        >.download{
+
+        >.download {
             width: 100%;
             height: 970px;
+            padding-top: 60px;
+
+            >h2 {
+                @include commonH2;
+            }
+
+            >article {
+                font-size: 14px;
+                text-align: center;
+                margin-bottom: 40px;
+                width: 453px;
+                margin: auto;
+                margin-bottom: 36px;
+            }
+
+            >figure {
+                width: 100%;
+                margin: auto;
+                margin-bottom: 36px;
+
+                >img {
+                    display: block;
+                    width: 90%;
+                    object-fit: cover;
+                }
+            }
+
+            >div {
+                width: max-content;
+                margin: auto;
+                margin-bottom: 36px;
+
+                >button {
+                    width: 138px;
+                    height: 38px;
+                    font-size: 14px;
+                    border-width: 0;
+
+                    &:nth-child(2) {
+                        color: #000;
+                        margin: 0 18px;
+                    }
+
+                    &:not(:nth-child(2)) {
+                        background-color: rgb(17, 18, 18);
+                    }
+                }
+            }
+
+            >.footer-car {
+                width: 769px;
+                display: flex;
+
+                >figure {
+                    width: max-content;
+
+                    >img {
+                        width: 100%;
+                    }
+                }
+
+                >div {
+                    color: #fcfcff;
+
+                    >h2 {
+                        font-family: 'Orbitron', sans-serif;
+                    }
+
+                    >article {
+                        font-size: 14px;
+                        margin: 18px 0;
+                    }
+
+                    >div {
+                        display: flex;
+
+                        >figure {
+                            &:first-child {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
         }
-        >.contact{
+
+        >.contact {
             width: 100%;
             height: 240px;
             background: #101a1b;
         }
-        >.copy{
+
+        >.copy {
             line-height: 36px;
             text-align: center;
             font-size: 14px;
