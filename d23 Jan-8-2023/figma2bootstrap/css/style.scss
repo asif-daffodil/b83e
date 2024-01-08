@@ -1,0 +1,16 @@
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+// import custom styles
+
+// import poppins font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.carousel-caption{
+    max-width: 600px;
+    margin: auto;
+    bottom: 40px;
+}
