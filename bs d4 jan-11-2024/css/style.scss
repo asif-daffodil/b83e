@@ -1,0 +1,10 @@
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+.main-header{
+    background: $gray-900;
+    color: $gray-100;
+}
+
+.btn-primary{
+    background-color: $blue-800;
+}
