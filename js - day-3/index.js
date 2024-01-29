@@ -64,5 +64,15 @@ readline.question('Enter a number between 1 and 7: ', number => {
 });
 
 
+function kaka () {
+    if(1 == 1) {
+        return "Hello";
+    }
+    return "World";
+}
+
+console.log(kaka());
+
+
 
 
