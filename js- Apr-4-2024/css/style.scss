@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    >.slider{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: max-content;
+        >img{
+            width: 100%;
+            visibility: hidden;
+        }
+        >.left{
+            width: 100px;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            color: #fff;
+            font-size: 48px;
+            display: grid;
+            place-items: center;
+            transform: translateX(-100%);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        >.right{
+            width: 100px;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            color: #fff;
+            font-size: 48px;
+            display: grid;
+            place-items: center;
+            transform: translateX(100%);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        &:hover{
+            >.left{
+                transform: translateX(0%);  
+            }
+            >.right{
+                transform: translateX(0%);  
+            }
+        }
+        >.slide{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+            &.d-none{
+                display: none;
+            }
+            >img{
+                width: 100%;
+                position: absolute;
+            }
+            >.message{
+                position: absolute;
+                bottom: 40px;
+                background: rgba(0,0,0,0.5);
+                color: #fff;
+                padding: 20px;
+                width: 400px;
+                border-radius: 6px;
+                animation: msg 3s 1 linear forwards;
+                >h2{
+                    text-transform: uppercase;
+                    margin-bottom: 9px;
+                    border-bottom: 2px solid #fff;
+                }
+                >p{
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+
+@keyframes msg {
+    0%{
+        left: 100%;
+    }
+    50%{
+        left: 10%;
+    }
+    100%{
+        left: 10%;
+    }
+}
