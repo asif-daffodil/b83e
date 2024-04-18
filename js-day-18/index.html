@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:focus {
+            outline: none;
+        }
+
+        .savingForm {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="form1">
+        <h3>Income</h3>
+        <input type="text" placeholder="Income" name="income">
+        <h3>Expenses</h3>
+        <input type="text" placeholder="Food" name="food">
+        <br><br>
+        <input type="text" placeholder="Rent" name="rent">
+        <br><br>
+        <input type="text" placeholder="Clothes" name="cloth">
+        <br><br>
+        <input type="submit" value="Calculate">
+    </form>
+    <h2 id="expenses">Total Expenses: <span id="exMsg"></span></h2>
+    <h3 id="balance">Balance: <span id="balMsg"></span></h3>
+
+    <div class="savingForm">
+        <form action="" id="form2">
+            <input type="text" placeholder="Save" name="save">%
+            <input type="submit" value="Save">
+        </form>
+        <h2>Saving Amount: <span id="saMsg"></span></h2>
+        <h3>Remaining Balance: <span id="remain"></span></h3>
+    </div>
+
+    <script>
+        const form1 = document.querySelector("#form1");
+        const form2 = document.querySelector("#form2");
+        const incomeInput = document.getElementsByName('income')[0];
+        const foodInput = document.getElementsByName('food')[0];
+        const rentInput = document.getElementsByName('rent')[0];
+        const clothInput = document.getElementsByName('cloth')[0];
+        const saveInput = document.getElementsByName('save')[0];
+        const expenses = document.querySelector("#expenses");
+        const balance = document.querySelector("#balance");
+        const exMsg = document.querySelector("#exMsg");
+        const balMsg = document.querySelector("#balMsg");
+        const saMsg = document.querySelector("#saMsg");
+        const remain = document.querySelector("#remain");
+        const savingForm = document.querySelectorAll(".savingForm")[0];
+
+        const validNumber = (num) => {
+            if (!num) {
+                return false;
+            } else if (!+num) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        form1.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const allData = new FormData(e.target);
+            const income = allData.get('income');
+            const food = allData.get('food');
+            const rent = allData.get('rent');
+            const cloth = allData.get('cloth');
+
+            if (validNumber(income)) {
+                incomeInput.style.borderColor = "green";
+            } else {
+                incomeInput.style.borderColor = "red";
+            }
+
+            if (validNumber(food)) {
+                foodInput.style.borderColor = "green";
+            } else {
+                foodInput.style.borderColor = "red";
+            }
+
+            if (validNumber(rent)) {
+                rentInput.style.borderColor = "green";
+            } else {
+                rentInput.style.borderColor = "red";
+            }
+
+            if (validNumber(cloth)) {
+                clothInput.style.borderColor = "green";
+            } else {
+                clothInput.style.borderColor = "red";
+            }
+
+            if (validNumber(income) && validNumber(food) && validNumber(rent) && validNumber(cloth)) {
+                const totalExpense = +food + +rent + +cloth;
+                const totalBalance = +income - totalExpense;
+                if (totalExpense > +income) {
+                    exMsg.textContent = 'Total expense is bigger then total income';
+                    exMsg.style.color = "red";
+                    savingForm.style.display = "none";
+                } else {
+                    balMsg.textContent = totalBalance;
+                    exMsg.textContent = totalExpense;
+                    exMsg.style.color = "green";
+                    balMsg.style.color = "green";
+                    savingForm.style.display = "block";
+                }
+            }
+        });
+
+        incomeInput.addEventListener('keyup', () => {
+            if (validNumber(incomeInput.value)) {
+                incomeInput.style.borderColor = "green";
+            } else {
+                incomeInput.style.borderColor = "red";
+            }
+        })
+
+        foodInput.addEventListener('keyup', () => {
+            if (validNumber(foodInput.value)) {
+                foodInput.style.borderColor = "green";
+            } else {
+                foodInput.style.borderColor = "red";
+            }
+        })
+
+        rentInput.addEventListener('keyup', () => {
+            if (validNumber(rentInput.value)) {
+                rentInput.style.borderColor = "green";
+            } else {
+                rentInput.style.borderColor = "red";
+            }
+        })
+
+        clothInput.addEventListener('keyup', () => {
+            if (validNumber(clothInput.value)) {
+                clothInput.style.borderColor = "green";
+            } else {
+                clothInput.style.borderColor = "red";
+            }
+        })
+
+        saveInput?.addEventListener('keyup', () => {
+            if (validNumber(saveInput.value)) {
+                saveInput.style.borderColor = "green";
+            } else {
+                saveInput.style.borderColor = "red";
+            }
+        })
+
+
+
+        form2.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const allData = new FormData(e.target);
+            const save = allData.get('save');
+            if (validNumber(save)) {
+                saveInput.style.borderColor = "green";
+            } else {
+                saveInput.style.borderColor = "red";
+            }
+
+            const totalExpense = +foodInput.value + +rentInput.value + +clothInput.value;
+            const totalBalance = +incomeInput.value - totalExpense;
+            const savingAmount = +incomeInput.value * (+save / 100);
+            if(savingAmount > totalBalance){
+                saMsg.textContent = 'Saving amount is bigger then remaining balance';
+                saMsg.style.color = "red";
+                remain.textContent = null;
+            }else{
+                saMsg.textContent = +incomeInput.value * (+save / 100);
+                saMsg.style.color = "green";
+                remain.textContent = totalBalance - savingAmount;
+                remain.style.color = "green";
+            }
+
+        });
+    </script>
+</body>
+
+</html>
