@@ -1,0 +1,15 @@
+.sazal{
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000000;
+    transition: 0.5s;
+}
