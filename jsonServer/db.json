@@ -1,0 +1,40 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Parvej",
+      "age": 25,
+      "city": "New York"
+    },
+    {
+      "id": "2",
+      "name": "Shaon",
+      "age": 22,
+      "city": "Los Angeles"
+    },
+    {
+      "id": "3",
+      "name": "Shajal",
+      "age": 23,
+      "city": "Chicago"
+    },
+    {
+      "id": "4",
+      "name": "Hamza",
+      "age": 23,
+      "city": "Cumilla"
+    },
+    {
+      "id": "6",
+      "name": "Raihan",
+      "age": 30,
+      "city": "Saudi Arab"
+    },
+    {
+      "id": "7",
+      "name": "Mashrafi",
+      "age": 30,
+      "city": "Vietnam"
+    }
+  ]
+}

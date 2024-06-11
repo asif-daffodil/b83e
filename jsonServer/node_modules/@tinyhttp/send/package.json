@@ -1,0 +1,41 @@
+{
+  "name": "@tinyhttp/send",
+  "version": "2.2.1",
+  "type": "module",
+  "description": "json, send, sendFile, status and sendStatus methods for tinyhttp",
+  "homepage": "https://tinyhttp.v1rtl.site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinyhttp/tinyhttp.git",
+    "directory": "packages/res"
+  },
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "keywords": [
+    "tinyhttp",
+    "node.js",
+    "web framework",
+    "web",
+    "backend",
+    "res",
+    "send",
+    "send-file"
+  ],
+  "engines": {
+    "node": ">=12.20.0"
+  },
+  "author": "v1rtl",
+  "license": "MIT",
+  "dependencies": {
+    "@tinyhttp/content-type": "^0.1.4",
+    "mime": "4.0.1",
+    "@tinyhttp/etag": "2.1.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  }
+}

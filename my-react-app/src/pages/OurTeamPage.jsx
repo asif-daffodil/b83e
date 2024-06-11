@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import OurTeam from "../Components/OurTeam";
+import Pions from "../Components/Pions";
 
 
 const OurTeamPage = () => {
@@ -9,6 +10,7 @@ const OurTeamPage = () => {
             <title>Our Team</title>
         </Helmet>
             <OurTeam />
+            <Pions />
         </>
     );
 };

@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "name": "Mobile",
+      "price": 10000,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Product 2",
+      "price": 200
+    },
+    {
+      "id": "4",
+      "name": "Product 4",
+      "price": 400
+    },
+    {
+      "id": "5",
+      "name": "Product 5",
+      "price": 500
+    },
+    {
+      "id": "837c",
+      "name": "Camera",
+      "price": 30000
+    },
+    {
+      "id": "c0c6",
+      "name": "Car",
+      "price": "1000000"
+    },
+    {
+      "id": "32da",
+      "name": "Table",
+      "price": "2000"
+    },
+    {
+      "id": "72f7",
+      "name": "Chata",
+      "price": "200"
+    },
+    {
+      "id": "33b6",
+      "name": "Umbrella",
+      "price": "300"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@tinyhttp/content-type",
+  "description": "content-type rewrite in TypeScript and ESM",
+  "version": "0.1.4",
+  "repository": "https://github.com/tinyhttp/content-type.git",
+  "engines": {
+    "node": ">=12.4"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "v1rtl <hi@v1rtl.site>",
+  "license": "MIT",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "devDependencies": {
+    "@types/node": "^20.6.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "c8": "^8.0.1",
+    "eslint": "^8.50.0",
+    "tsm": "^2.3.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "uvu": "^0.5.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "test": "uvu -r tsm test",
+    "test:coverage": "c8 --include=src pnpm test",
+    "test:report": "c8 report --reporter=text-lcov > coverage.lcov"
+  }
+}

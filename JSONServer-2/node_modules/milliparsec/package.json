@@ -1,0 +1,41 @@
+{
+  "name": "milliparsec",
+  "version": "2.3.0",
+  "description": "tiniest body parser in the universe",
+  "repository": "https://github.com/talentlessguy/parsec.git",
+  "author": "talentlessguy <pilll.PL22@gmail.com>",
+  "license": "MIT",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "body-parser",
+    "express",
+    "http",
+    "body-parsing"
+  ],
+  "engines": {
+    "node": ">=12.4"
+  },
+  "exports": "./dist/index.js",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@tinyhttp/app": "^2.0.31",
+    "@types/node": "^18.16.3",
+    "c8": "7.13.0",
+    "rollup": "^3.21.4",
+    "supertest-fetch": "^1.5.0",
+    "tslib": "^2.5.0",
+    "tsm": "^2.3.0",
+    "typescript": "^5.0.4",
+    "uvu": "^0.5.6"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "uvu -r tsm",
+    "test:coverage": "c8 --include=src pnpm test",
+    "test:report": "c8 report --reporter=text-lcov > coverage.lcov",
+    "build": "rollup -c"
+  }
+}

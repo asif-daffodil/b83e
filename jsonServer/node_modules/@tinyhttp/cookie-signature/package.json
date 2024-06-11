@@ -1,0 +1,36 @@
+{
+  "name": "@tinyhttp/cookie-signature",
+  "version": "2.1.0",
+  "description": "HTTP cookie signing and unsigning",
+  "homepage": "https://tinyhttp.v1rtl.site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinyhttp/tinyhttp.git",
+    "directory": "packages/cookie-signature"
+  },
+  "engines": {
+    "node": ">=12.20.0"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "keywords": [
+    "tinyhttp",
+    "node.js",
+    "web framework",
+    "web",
+    "backend",
+    "static",
+    "cookie"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "v1rtl",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  }
+}

@@ -14,6 +14,7 @@ const Navbar = () => {
                     <NavLink to={'/'} className={({isActive}) =>  `mr-5 hover:text-gray-900 ${isActive ? 'text-red-600':null}` }  >Home</NavLink>
                     <NavLink to={'/our-team'} className={({isActive}) => `mr-5 hover:text-gray-900 ${isActive ? 'text-red-600':null}`}>Our Team</NavLink>
                     <NavLink to={'/pricing'} className={({isActive}) => `mr-5 hover:text-gray-900 ${isActive ? 'text-red-600':null}`}>Pricing</NavLink>
+                    <NavLink to={'/JSON-Server'} className={({isActive}) => `mr-5 hover:text-gray-900 ${isActive ? 'text-red-600':null}`}>JSON-Server</NavLink>
                     <NavLink to={'/contact'} className={({isActive})=> `mr-5 hover:text-gray-900 ${isActive ? 'text-red-600':null}`}>Contact</NavLink>
                 </nav>
                 <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button

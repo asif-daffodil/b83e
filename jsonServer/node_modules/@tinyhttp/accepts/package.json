@@ -1,0 +1,36 @@
+{
+  "name": "@tinyhttp/accepts",
+  "description": "accepts rewrite in TypeScript",
+  "version": "2.2.1",
+  "license": "MIT",
+  "homepage": "https://tinyhttp.v1rtl.site",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/tinyhttp/tinyhttp?sponsor=1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinyhttp/tinyhttp.git",
+    "directory": "packages/cookie-signature"
+  },
+  "engines": {
+    "node": ">=12.20.0"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/negotiator": "^0.6.3"
+  },
+  "dependencies": {
+    "mime": "4.0.1",
+    "negotiator": "^0.6.3"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  }
+}
