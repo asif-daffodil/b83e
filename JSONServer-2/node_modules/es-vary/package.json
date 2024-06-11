@@ -1,0 +1,50 @@
+{
+  "name": "es-vary",
+  "description": "vary rewrite in TypeScript with ESM and CommonJS targets",
+  "version": "0.1.2",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talentlessguy/es-vary.git"
+  },
+  "keywords": [
+    "http",
+    "esm",
+    "es",
+    "vary",
+    "nodejs",
+    "javascript"
+  ],
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "author": "v1rtl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/talentlessguy/es-vary/issues"
+  },
+  "homepage": "https://github.com/talentlessguy/es-vary#readme",
+  "devDependencies": {
+    "@types/node": "^15.6.0",
+    "c8": "^7.11.0",
+    "tsm": "^2.2.1",
+    "tsup": "^4.11.0",
+    "typescript": "^4.2.4",
+    "uvu": "^0.5.3"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --minify-whitespace --format esm --dts",
+    "test": "tsm node_modules/uvu/bin.js test",
+    "test:coverage": "c8 --include=src pnpm test",
+    "test:report": "c8 report --reporter=text-lcov > coverage.lcov"
+  },
+  "readme": "# es-vary\n\n![Vulnerabilities][snyk-image]\n[![Version][npm-v-image]][npm-url]\n[![Node Version][node-version-image]][node-version-url]\n\n> [`vary`](https://github.com/jshttp/vary) rewrite in TypeScript with ESM and CommonJS targets\n\nManipulate the HTTP Vary header\n\n## Install\n\n```sh\npnpm i es-vary\n```\n\n## API\n\n```ts\nimport { vary, append } from 'es-vary'\n```\n\n### `vary(res, field)`\n\nAdds the given header `field` to the `Vary` response header of `res`.\nThis can be a string of a single field, a string of a valid `Vary`\nheader, or an array of multiple fields.\n\nThis will append the header if not already listed, otherwise leaves\nit listed in the current location.\n\n```ts\nvary(res, 'Origin')\n```\n\n### `append(header, field)`\n\nAdds the given header `field` to the `Vary` response header string `header`.\nThis can be a string of a single field, a string of a valid `Vary` header,\nor an array of multiple fields.\n\nThis will append the header if not already listed, otherwise leaves\nit listed in the current location. The new header string is returned.\n\n```ts\n// Get header string appending \"Origin\" to \"Accept, User-Agent\"\nappend('Accept, User-Agent', 'Origin')\n```\n\n## Examples\n\n```ts\nimport { createServer } from 'http'\nimport { vary } from 'es-vary'\n\ncreateServer((req, res) => {\n  // about to user-agent sniff\n  vary(res, 'User-Agent')\n\n  const ua = req.headers['user-agent'] || ''\n  const isMobile = /mobi|android|touch|mini/i.test(ua)\n\n  // serve site, depending on isMobile\n  res.setHeader('Content-Type', 'text/html')\n  res.end('You are (probably) ' + (isMobile ? '' : 'not ') + 'a mobile user')\n})\n```\n\n## License\n\nMIT © [v1rtl](https://v1rtl.site)\n\n[node-version-image]: https://img.shields.io/node/v/es-vary.svg?style=flat-square\n[node-version-url]: https://nodejs.org\n[snyk-image]: https://img.shields.io/snyk/vulnerabilities/npm/es-vary.svg?style=flat-square\n[npm-v-image]: https://img.shields.io/npm/v/es-vary.svg?style=flat-square\n[npm-url]: https://www.npmjs.com/package/es-vary\n"
+}
