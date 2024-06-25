@@ -9,7 +9,7 @@ const JsonServerPage = () => {
         const { data } = await axios.get('http://localhost:3000/products');
         return data;
     }
-    const { data, isFetching, isFetched, refetch } = useQuery({ queryKey: ['getProduct'], queryFn: getProduct });
+    const { data, isFetched, refetch } = useQuery({ queryKey: ['getProduct'], queryFn: getProduct });
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const onSubmit = async (data) => {

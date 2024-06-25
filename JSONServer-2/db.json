@@ -44,6 +44,11 @@
       "id": "33b6",
       "name": "Umbrella",
       "price": "300"
+    },
+    {
+      "id": "48f9",
+      "name": "Shingara",
+      "price": "20"
     }
   ]
 }

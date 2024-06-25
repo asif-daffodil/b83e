@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import Loading from "./Loading";
 import Member from "./Member";
+import { useForm } from "react-hook-form";
 
 const OurTeam = () => {
     const getMembers = async () => {
@@ -9,8 +10,13 @@ const OurTeam = () => {
         return data;
     };
 
+    const { data, isLoading, isFetched } = useQuery({ queryKey: ['getMembers'], queryFn: getMembers });
+
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
+
+
+
     return (
         <>
             {isLoading && <Loading />}
