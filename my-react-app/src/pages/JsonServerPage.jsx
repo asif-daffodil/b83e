@@ -56,6 +56,19 @@ const JsonServerPage = () => {
                         />
                         {errors.price && <p className="text-red-500">{errors.price.message}</p>}
                     </div>
+                    <div className="mb-4">
+                        <textarea className="w-full p-2 border-2 border-gray-300 rounded-lg" placeholder="Product description" {...register('description',{
+                            required: {
+                                value: true,
+                                message: 'Product Description is required'
+                            },
+                            minLength: {
+                                value: 10,
+                                message: 'Product Description must be at least 10 characters'
+                            }
+                        })} id=""></textarea>
+                    </div>
+                    {errors.description && <p className="text-red-500">{errors.description.message}</p>}
                     <button className="w-full p-2 bg-blue-500 text-white rounded-lg">
                         Add Product
                     </button>
@@ -70,6 +83,7 @@ const JsonServerPage = () => {
                                 key={product.id}
                                 name={product.name}
                                 price={product.price}
+                                id={product.id}
                                 className="bg-white p-4 rounded-lg shadow-md"
                             />
                         ))}
