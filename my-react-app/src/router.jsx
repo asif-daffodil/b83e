@@ -6,6 +6,7 @@ import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/ContactPage";
 import JsonServerPage from "./pages/JsonServerPage";
 import SingleJsonServerPage from "./pages/SingleJsonServerPage";
+import EditJsonServerPage from "./pages/EditJsonServerPage";
 
 const router = createBrowserRouter([
     {
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
         { path: "/pricing", element: <PricingPage />},
         { path: "/contact", element: <ContactPage />},
         { path: "/JSON-Server", element: <JsonServerPage />},
-        { path: "/JSON-Server/:id", element: <SingleJsonServerPage />}
+        { path: "/JSON-Server/:id", element: <SingleJsonServerPage />},
+        { path: "/JSON-Server-edit/:id", element: <EditJsonServerPage />}
       ]
     },
   ]);
