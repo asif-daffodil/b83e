@@ -2,10 +2,12 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 
 const EditJsonServerPage = () => {
     const { id } = useParams();
+    const navigate = useNavigate();
     const getProduct = async () => {
         const { data } = await axios.get(`http://localhost:3000/products/${id}`);
         return data;
@@ -22,13 +24,14 @@ const EditJsonServerPage = () => {
     const onSubmit = async (data) => {
         const updateProduct = await axios.put(`http://localhost:3000/products/${id}`, data);
         if(updateProduct){
-            console.log('Product updated');
+            toast.success('Product updated');
         }
     }
 
     return (
         <div className="container mx-auto grid md:grid-cols-2 gap-4 py-6">
             <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit(onSubmit)}>
+            <ToastContainer autoClose={2000} theme="dark" />
                 <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
                         Name
@@ -94,11 +97,12 @@ const EditJsonServerPage = () => {
                 </div>
                 <div className="flex items-center justify-center">
                     <button
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2"
                         type="submit"
                     >
                         Submit
                     </button>
+                    <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onClick={() => {navigate(-1)}} type="button">Back</button>
                 </div>
             </form>
             <div>

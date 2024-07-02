@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import JesonServer from "../Components/JesonServer";
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
 
 
 const JsonServerPage = () => {
@@ -17,11 +18,13 @@ const JsonServerPage = () => {
         if(addProduct){
             refetch();
             reset();
+            toast('Product added');
         }
     }
     return (
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
+            <ToastContainer />
                 <h2 className="text-center text-4xl py-5">Add Product</h2>
                 <form action="" onSubmit={handleSubmit(onSubmit)}>
                     <div className="mb-4">
